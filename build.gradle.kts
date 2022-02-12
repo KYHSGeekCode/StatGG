@@ -20,7 +20,13 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.data:spring-data-jpa:2.6.1")
+    implementation("org.springframework.boot:spring-boot-starter-jdbc:+")
+    implementation("org.springframework.data:spring-data-jdbc:2.3.1")
+    implementation("com.h2database:h2:1.4.200")
+    implementation("org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
 }
 
 tasks.withType<KotlinCompile> {
